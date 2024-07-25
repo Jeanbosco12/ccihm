@@ -1,0 +1,26 @@
+.sidebar{
+    float: left;
+    height: 100dvh;
+}
+.corp{
+    margin-left: 10px;
+}
+.header{
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.459),
+                0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    animation-name: led;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes led {
+    0% {
+        box-shadow: 0px 2px 0px rgba(255, 0, 0, 0.459);
+    }
+    50% {
+        box-shadow: 0px -2px 0px rgba(0, 255, 0, 0.459);
+    }
+    100% {
+        box-shadow: 0px 2px 0px rgba(0, 0, 255, 0.459);
+    }
+}
